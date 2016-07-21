@@ -1,0 +1,22 @@
+package design.pattern;
+
+public abstract class AbstractHanler {
+	
+	private AbstractHanler succesor;
+	private int level;
+	public AbstractHanler(AbstractHanler succesor,int level){
+		this.succesor=succesor;
+		this.level=level;
+	}
+	
+	public void handleRequest(AbstractRequest request){
+		if(request.getLevel()==level){
+			System.out.println(request.getContent());
+		}else{
+			succesor.handle(request);
+		}
+	}
+	
+	public abstract void handle(AbstractRequest request);
+
+}

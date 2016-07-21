@@ -1,0 +1,11 @@
+package design.pattern.command;
+
+public class ShutDownCommand extends Command {
+
+	@Override
+	public void invokeReceiver(Receiver receiver) {
+		// TODO Auto-generated method stub
+		receiver.shutdown();
+	}
+
+}

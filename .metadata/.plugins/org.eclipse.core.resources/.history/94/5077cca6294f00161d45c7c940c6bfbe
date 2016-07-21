@@ -1,0 +1,29 @@
+package design.pattern.command;
+
+public class Invoker {
+	
+	private Command command;
+	
+	public Invoker(){
+		
+	}
+	
+	public Invoker(Command command){
+		this.command=command;
+	}
+	
+	public void excuteCommand(){
+		if(command!=null)
+			excuteCommand(command);
+	}
+	
+	public void excuteCommand(Command command){
+		command.excute();
+	}
+	
+	public static void main(String[] args) {
+		Command command=new ShutDownCommand();
+		Invoker invoker=new Invoker(command);
+	}
+	
+}

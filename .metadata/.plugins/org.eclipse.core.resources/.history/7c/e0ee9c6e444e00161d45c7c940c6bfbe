@@ -1,0 +1,11 @@
+package design.pattern;
+
+public class FirstHandler extends AbstractHanler {
+
+	@Override
+	public void handle(AbstractRequest request) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

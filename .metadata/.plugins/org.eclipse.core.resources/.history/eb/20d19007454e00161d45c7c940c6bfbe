@@ -1,0 +1,14 @@
+package design.pattern;
+
+public class ThirdHandler extends AbstractHanler {
+
+	public ThirdHandler(AbstractHanler succesor, int level) {
+		super(succesor, level);
+	}
+
+	@Override
+	public void handle(AbstractRequest request) {
+		System.out.println("third handle");
+	}
+
+}

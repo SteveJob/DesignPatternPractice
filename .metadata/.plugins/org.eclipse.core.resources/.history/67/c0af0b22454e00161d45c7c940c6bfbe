@@ -1,0 +1,8 @@
+package design.pattern;
+
+public class OneRequest extends AbstractRequest {
+
+	public OneRequest(Object content,int level) {
+		super(content,level);
+	}
+}

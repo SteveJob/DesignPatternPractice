@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+/Users/briar/Steve/designpattern/.metadata/.plugins/org.eclipse.jdt.core
+3249670668.index
