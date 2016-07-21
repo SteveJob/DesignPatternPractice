@@ -1,0 +1,11 @@
+package design.pattern.observer;
+
+public class SingleFrameStudio extends Observer {
+
+	@Override
+	public void publish(Observable observable) {
+		// TODO Auto-generated method stub
+		System.out.println(observable.getContent());
+	}
+
+}
